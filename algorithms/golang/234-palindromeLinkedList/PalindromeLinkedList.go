@@ -77,7 +77,7 @@ func main() {
 		n1 := &ListNode{Val: 1}
 		n2 := &ListNode{Val: 2}
 		n1.Next = n2
-		fmt.Println("1->2 is palindrome?", isPalindrome(n1))
+		fmt.Println("1->2 is palindrome?", isPalindromeOpt1(n1))
 	}
 
 	{
@@ -86,7 +86,7 @@ func main() {
 		n3 := &ListNode{Val: 3}
 		n1.Next = n2
 		n2.Next = n3
-		fmt.Println("1->2->3 is palindrome?", isPalindrome(n1))
+		fmt.Println("1->2->3 is palindrome?", isPalindromeOpt1(n1))
 	}
 
 	{
@@ -95,7 +95,7 @@ func main() {
 		n3 := &ListNode{Val: 1}
 		n1.Next = n2
 		n2.Next = n3
-		fmt.Println("1->2->1 is palindrome?", isPalindrome(n1))
+		fmt.Println("1->2->1 is palindrome?", isPalindromeOpt1(n1))
 	}
 
 	{
@@ -106,7 +106,7 @@ func main() {
 		n1.Next = n2
 		n2.Next = n3
 		n3.Next = n4
-		fmt.Println("1->2->3->4 is palindrome?", isPalindrome(n1))
+		fmt.Println("1->2->3->4 is palindrome?", isPalindromeOpt1(n1))
 	}
 
 	{
@@ -117,7 +117,7 @@ func main() {
 		n1.Next = n2
 		n2.Next = n3
 		n3.Next = n4
-		fmt.Println("1->2->2->1 is palindrome?", isPalindrome(n1))
+		fmt.Println("1->2->2->1 is palindrome?", isPalindromeOpt1(n1))
 	}
 
 	{
@@ -130,7 +130,7 @@ func main() {
 		n2.Next = n3
 		n3.Next = n4
 		n4.Next = n5
-		fmt.Println("1->2->3->4->5 is palindrome?", isPalindrome(n1))
+		fmt.Println("1->2->3->4->5 is palindrome?", isPalindromeOpt1(n1))
 	}
 
 	{
@@ -143,6 +143,6 @@ func main() {
 		n2.Next = n3
 		n3.Next = n4
 		n4.Next = n5
-		fmt.Println("1->2->3->2->1 is palindrome?", isPalindrome(n1))
+		fmt.Println("1->2->3->2->1 is palindrome?", isPalindromeOpt1(n1))
 	}
 }
