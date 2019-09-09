@@ -44,7 +44,7 @@ func main() {
 		n2.Next = n3
 		n3.Next = n4
 
-		printList(insertionSortList(n1))
+		printList(insertionSortListOpt1(n1))
 	}
 
 	{
@@ -58,6 +58,16 @@ func main() {
 		n3.Next = n4
 		n4.Next = n5
 
-		printList(insertionSortList(n1))
+		printList(insertionSortListOpt1(n1))
+	}
+
+	{
+		n1 := &ListNode{Val: 3}
+		n2 := &ListNode{Val: 2}
+		n3 := &ListNode{Val: 4}
+		n1.Next = n2
+		n2.Next = n3
+
+		printList(insertionSortListOpt1(n1))
 	}
 }
