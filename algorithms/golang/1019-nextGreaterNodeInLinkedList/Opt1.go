@@ -10,9 +10,11 @@ func nextLargerNodesOpt1(head *ListNode) []int {
 		count++
 	}
 
-	nodeVal := make([]int, 0, count)
-	for p := head; p != nil; p = p.Next {
-		nodeVal = append(nodeVal, p.Val)
+	nodeVal := make([]int, count, count)
+	p := head
+	for i := 0; i < count; i++ {
+		nodeVal[i] = p.Val
+		p = p.Next
 	}
 
 	nextLarger := make([]int, count, count)
