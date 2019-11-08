@@ -18,4 +18,12 @@ func main() {
 
 		fmt.Println(nums1)
 	}
+
+	{
+		nums1 := []int{0}
+		nums2 := []int{1}
+		mergeOpt1(nums1, 0, nums2, 1)
+
+		fmt.Println(nums1)
+	}
 }
